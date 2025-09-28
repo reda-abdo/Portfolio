@@ -11,9 +11,9 @@ import { Button } from "@/components/ui/button";
 import img2 from "../../app/images/Screenshot 2025-09-29 000145.png"
 import img3 from "../../app/images/Screenshot 2025-09-29 002453.png"
 import img4 from "../../app/images/Screenshot 2025-09-29 002421.png"
-import img5 from "../../app/images/Screenshot 2025-09-29 002919.png"
+import img5 from "../../app/images/Screenshot 2025-09-29 003108.png"
 import img6 from "../../app/images/Screenshot 2025-09-29 002934.png"
-import img7 from "../../app/images/Screenshot 2025-09-29 003108.png"
+import img7 from "../../app/images/Screenshot 2025-09-29 002919.png"
 
 
 const Projects = () => {
@@ -26,7 +26,6 @@ const Projects = () => {
       title: "E-Commerce Web Application",
       description:
         "A full-stack e-commerce platform featuring product listing, cart, and seamless checkout experience. Implemented secure authentication with NextAuth, efficient state management using Redux Toolkit, and robust form validation with React Hook Form and Zod. Designed with Tailwind CSS to ensure a responsive, high-performance user experience.",
-      // image: "https://postimg.cc/V5Msm7rP",
       image: img2,
       year: "2025",
       role: "Front-end Developer",
@@ -85,7 +84,7 @@ const Projects = () => {
       title: "Devfolio",
       description:
         "A responsive developer portfolio website showcasing smooth animations and well-structured sections for About, Portfolio, and Contact. Built with HTML, CSS, and JavaScript to ensure a clean design and seamless user experience.",
-      image: img5,
+      image: img7,
       year: "2022",
       role: "Front-end Developer",
       client: "Personal Project",
@@ -113,7 +112,7 @@ const Projects = () => {
       title: "Bookmark",
       description:
         "A lightweight bookmarking tool that lets users save and manage their favorite websites. The interface enables input of site name and URL, displays a list of saved bookmarks with options to visit or delete, all wrapped in a clean, responsive layout.",
-      image: img7,
+      image: img5,
       year: "2025",
       role: "Front-end Developer",
       client: "Personal Project",
@@ -125,7 +124,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" ref={ref} className="py-20 px-6">
+    <section id="projects" ref={ref} className="py-20 px-0">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -165,7 +164,7 @@ const Projects = () => {
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     {project.label && (
-                      <div className="absolute top-4 left-4 bg-muted/90 text-muted-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      <div className="absolute top-4 left-4 bg-muted/90 text-muted-foreground px-1 py-1 rounded-full text-sm font-medium">
                         {project.label}
                       </div>
                     )}
@@ -175,7 +174,7 @@ const Projects = () => {
                 {/* Project Details */}
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                    <h3 className="text-2xl md:text-lg font-bold text-foreground mb-4">
                       {project.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
