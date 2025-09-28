@@ -161,7 +161,7 @@ const Projects = () => {
                       alt={project.title}
                       width={600}
                       height={400}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                     {project.label && (
                       <div className="absolute top-4 left-4 bg-muted/90 text-muted-foreground px-1 py-1 rounded-full text-sm font-medium">
